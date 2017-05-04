@@ -1,0 +1,15 @@
+[mastodon_base_settings]
+api_base_url=https://mstdn-workers.com
+
+[mastodon_user_settings]
+username=username
+password=password
+
+[pytdn-speak]
+speak_enable=False
+speaker_type=SofTalk
+
+[softalk]
+volume=60
+speed=200
+voicetype=1
