@@ -1,0 +1,6 @@
+[mastodon_base_settings]
+api_base_url=https://mstdn-workers.com
+
+[mastodon_user_settings]
+username=username
+password=password
