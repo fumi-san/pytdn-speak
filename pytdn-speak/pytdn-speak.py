@@ -78,12 +78,17 @@ if __name__ == "__main__":
     if(cf.get_speak_enable()=='False'):
         listener=Streamer()
         mastodon.local_stream(listener)
-    else:
+    elif(cf.get_speaker_type()=='SofTalk'):
         listener=Streamer({
             'speaker_type':cf.get_speaker_type(),
             'speaker_volume':cf.get_speaker_volume(),
             'speaker_speed':cf.get_speaker_speed(),
             'speaker_voicetype':cf.get_speaker_voicetype()
+            })
+        mastodon.local_stream(listener)
+    elif(cf.get_speaker_type()=='VOICEROID'):
+        listener=Streamer({
+            'speaker_type':cf.get_speaker_type(),
             })
         mastodon.local_stream(listener)
 
