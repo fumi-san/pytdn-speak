@@ -23,7 +23,7 @@ class Streamer(StreamListener):
     def on_update(self, status):
         '''Behavior when streaming is updated.'''
         pattern_content1=re.compile('<.*?>')
-        pattern_content2=re.compile('http[s]?.*[\s$]')
+        pattern_content2=re.compile('http[s]?.*[\s$]*?')
         pattern_content3=re.compile('\#.*[\s]*')
         time=status['created_at'].replace('T',' ').split('.')[0]
         content=pattern_content1.sub('',status['content'])
