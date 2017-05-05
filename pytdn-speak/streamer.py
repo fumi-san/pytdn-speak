@@ -39,3 +39,5 @@ class Streamer(StreamListener):
                     ' /S:'+self.get_speaker_info()['speaker_speed'],
                     ' /T:'+self.get_speaker_info()['speaker_voicetype'],
                     ' /W:'+content])
+            elif(self.get_speaker_info()['speaker_type']=='VOICEROID'):
+                proc=subprocess.Popen(['vrx.exe',content])

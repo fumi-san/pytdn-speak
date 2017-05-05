@@ -7,7 +7,8 @@ password=password
 
 [pytdn-speak]
 speak_enable=False
-speaker_type=SofTalk
+#speaker_type=SofTalk
+#speaker_type=VOICEROID
 
 [softalk]
 volume=60
